@@ -2,7 +2,7 @@ export default function GetNutrCost(props) {
 
     return(
         <div>
-            <h4>Nutrition & Cost</h4>
+            <h2>Nutrition & Cost</h2>
             <table>
                 <tr>
                     <td>
@@ -15,11 +15,11 @@ export default function GetNutrCost(props) {
                     </td>
                     <td>
                         Entire recipe:<br />
-                        {298*24} calories<br />
-                        {38.9*24}g carbohydrates<br />
-                        {3.6*24}g protein<br />
-                        {15.6*24}g fat<br />
-                        ${0.26*24}
+                        {(298*24).toFixed(2)} calories<br />
+                        {(38.9*24).toFixed(2)}g carbohydrates<br />
+                        {(3.6*24).toFixed(2)}g protein<br />
+                        {(15.6*24).toFixed(2)}g fat<br />
+                        ${(0.26*24).toFixed(2)}
                     </td>
                 </tr>
             </table>

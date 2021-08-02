@@ -16,8 +16,12 @@ export default class App extends React.Component {
     e.preventDefault();
     if (document.getElementById('recipeUrl').value !== "") {
       ReactDOM.render(
+        <h2>Ingredients</h2>,
+        document.getElementById('ingredientsHeader')
+      );
+      ReactDOM.render(
         <ScrapeRecipe url={document.getElementById('recipeUrl').value} />,
-        document.getElementById('ingredients')
+        document.getElementById('ingredientsList')
       );
       ReactDOM.render(
         <GetNutrCost />,
@@ -30,7 +34,7 @@ export default class App extends React.Component {
     } else {
       ReactDOM.render(
         <BadUrl />,
-        document.getElementById('ingredients')
+        document.getElementById('ingredientsHeader')
       );
     }
   }
@@ -60,7 +64,9 @@ export default class App extends React.Component {
               <input type="submit" value="GO" />
             </form>
         </header>
-        <header className="App-data" id="ingredients">
+        <header className="App-data" id="ingredientsHeader">
+        </header>
+        <header className="App-data" id="ingredientsList">
         </header>
         <header className="App-data" id="nutrCost">
         </header>
