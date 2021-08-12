@@ -1,19 +1,21 @@
 .App {
   text-align: left;
-  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
+  align-items: left;
   font-size: calc(5px + 1.5vmin);
-  /* color: white; */
   margin-right: 20%;
-  margin-left: 20%
+  margin-left: 20%;
+  margin-bottom: 10%;
 }
 
 h4 {
   margin-top: 40px;
+}
+
+h2 {
+  margin-top: 50px;
 }
 
 .App-link {
@@ -21,20 +23,10 @@ h4 {
 }
 
 input[type=text] {
-  width: 80%;
+  width: 70%;
   padding: 10px 10px;
-  margin: 8px 0;
+  margin: 5px 5px;
   box-sizing: border-box;
-  border-radius: 7px;
-  font-size: calc(5px + 1.2vmin)
-}
-
-input[type=submit] {
-  width: 10%;
-  padding: 10px 10px;
-  margin: 8px 8px;
-  box-sizing: border-box;
-  background-color: #a8bcff;
   border-radius: 7px;
   font-size: calc(5px + 1.2vmin)
 }
@@ -43,6 +35,32 @@ input[type=text]:focus {
   background-color: #e9f0ff;
 }
 
+input[type=submit] {
+  width: 7%;
+  padding: 10px 10px;
+  margin: 5px 5px;
+  box-sizing: border-box;
+  background-color: #a8bcff;
+  border-radius: 7px;
+  font-size: calc(5px + 1.2vmin)
+}
+
+input[type=button] {
+  width: 10%;
+  padding: 10px 10px;
+  margin: 5px 5px;
+  box-sizing: border-box;
+  background-color: #a8bcff;
+  border-radius: 7px;
+  font-size: calc(5px + 1.2vmin)
+}
+
 #errorMsg {
   color: #ff0000;
+}
+
+.highlight {
+  color: #ff0000;
+  text-decoration: underline;
+  font-weight: bold;
 }
