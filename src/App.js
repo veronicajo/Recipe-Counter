@@ -38,9 +38,9 @@ export default class App extends React.Component {
             </p>
             <ul>
               <li>Prints out the ingredients and the amounts in the recipe.</li>
-              <li>Calculates the approximate nutritional information for the entire recipe and each serving (if the number of servings is provided in the recipe).</li>
-              <li>Calculates the approximate cost of the ingredients in the recipe and each serving (if the number of servings is provided in the recipe).</li>
-              <li>Creates a grocery list of the ingredients with their cost and where they can be purchased.</li>
+              <li>Calculates the approximate nutritional information for the entire recipe.</li>
+              <li>Creates a grocery list of the ingredients with their cost if they can be purchased at Kroger.</li>
+              <li>Calculates the approximate total cost of buying all ingredients in the recipe that can be purchased at Kroger.</li>
             </ul>
             <h4>How to Use</h4>
             <p>

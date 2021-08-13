@@ -1,5 +1,4 @@
 import React from 'react';
-import ShoppingList from './grocery';
 
 export default class GetNutrition extends React.Component {
     constructor(props) {
@@ -96,7 +95,6 @@ export default class GetNutrition extends React.Component {
     }
 
     sumMacros(nutrInfo) {
-        console.log(nutrInfo)
         var sumArray = [];
         for (var i = 0; i < 4; i++) {
             var tempSum = 0
@@ -113,7 +111,6 @@ export default class GetNutrition extends React.Component {
 
     componentDidMount() {
         var nutrInfo = [];
-        console.log(this.state.ingredientDict)
         const count = this.state.ingredientDict.length
         var i = 0
         while (i < count && !(this.state.ready)) {
@@ -125,7 +122,6 @@ export default class GetNutrition extends React.Component {
                     name: item.ingredient.replaceAll(" ", "%20"), 
                     qty: quantity
                 }
-                console.log(ingrInfo)
                 this.makeRequest(ingrInfo, nutrInfo);
                 i++;
             } else {
