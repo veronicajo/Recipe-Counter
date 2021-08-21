@@ -5,7 +5,7 @@
 This application was created as a one-stop page for users that are interested in cooking, conscious of their food intake (calories, protein, etc.) and cost that goes into a recipe (how much would it cost if I had to buy all the ingredients?).
 
 ## Demo Video
-
+https://user-images.githubusercontent.com/59591532/130334742-969bb20f-f304-47c8-8331-733c5cae48e5.mov
 
 ## Construction
 This was built using React, JavaScript, HTML, CSS, and Node.js. 
